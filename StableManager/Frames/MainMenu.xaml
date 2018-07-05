@@ -1,0 +1,68 @@
+﻿<Page x:Class="StableManager.Frames.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StableManager.Frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="650"
+      Title="MainMenu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="187*"/>
+        </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Center" Margin="-160,24,590,256" VerticalAlignment="Center" Height="220" Width="220" Name="HorseButton" Click="HorseButton_Click" Grid.RowSpan="3">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/horse.png"></Image>
+                <Label Margin="0,20,0,0" Content="Chevaux" HorizontalAlignment="Center" FontSize="20"></Label>
+            </StackPanel>
+        </Button>
+
+        <Button HorizontalAlignment="Center" Margin="90,24,340,256" VerticalAlignment="Center" Height="220" Width="220" Grid.RowSpan="3">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/red-cross.png"></Image>
+                <Label Margin="0,20,0,0" Content="Soins" HorizontalAlignment="Center" FontSize="20"></Label>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="338,24,92,256" VerticalAlignment="Center" Height="220" Width="220" Grid.RowSpan="3">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/vaccine.png"/>
+                <Label Margin="0,20,0,0" Content="Vaccins" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="-160,122,590,32" VerticalAlignment="Center" Height="220" Width="220" x:Name="HorseButton_Copy" Click="HorseButton_Click" Grid.Row="2">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/caterpillar.png"/>
+                <Label Margin="0,20,0,0" Content="Vermifuges" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="90,122,340,32" VerticalAlignment="Center" Height="220" Width="220" Grid.Row="2">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/horseshoe.png"/>
+                <Label Margin="0,20,0,0" Content="Ferrures" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="338,122,92,32" VerticalAlignment="Center" Height="220" Width="220" Grid.Row="2" Name="EcurieButton" Click="EcurieButton_Click">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/barn.png"/>
+                <Label Margin="0,20,0,0" Content="Mon Écurie" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="592,24,-162,256" VerticalAlignment="Center" Height="220" Width="220" Grid.RowSpan="3">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/caravan.png"/>
+                <Label Margin="0,20,0,0" Content="Transports" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Center" Margin="592,122,-162,32" VerticalAlignment="Center" Height="220" Width="220" Grid.Row="2" x:Name="EcurieButton_Copy" Click="EcurieButton_Click">
+            <StackPanel VerticalAlignment="Top">
+                <Image Width="150" Height="150" Margin="0,0,0,0" Source="/StableManager;component/Images/contacts.png"/>
+                <Label Margin="0,20,0,0" Content="Contacts" HorizontalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="StableManager.Frames.Popup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StableManager.Frames"
+        mc:Ignorable="d"
+        Title="Information" Height="300" Width="600">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="AUTO" Height="AUTO">
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Width="100" Content="Nom :"/>
+                    <TextBox x:Name="Nom" Width="200" IsEnabled="False"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Width="100" Content="Prenom :"/>
+                    <TextBox x:Name="Prenom"  Width="200" IsEnabled="False"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Width="100" Content="Adresse :"/>
+                    <TextBox x:Name="Adresse" Text=""  Width="484" IsEnabled="False"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Width="100" Content="Telephone :"/>
+                    <TextBox x:Name="Telephone" Width="200" IsEnabled="False"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Width="100" Content="Mail :"/>
+                    <TextBox x:Name="Mail" Width="200" IsEnabled="False"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

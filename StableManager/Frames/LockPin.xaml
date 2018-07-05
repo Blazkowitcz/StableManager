@@ -1,0 +1,38 @@
+﻿<Window x:Class="StableManager.Frames.LockPin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StableManager.Frames"
+        mc:Ignorable="d"
+        Title="Déverouiller" Height="300" Width="250" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="241" Height="AUTO">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label Name="label">Veuillez entrer le code à 4 chiffres</Label>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,0">
+                    <Button Width="30" Height="30" Content="0" Click="ClickButton"></Button>
+                    <Button Width="30" Height="30" Content="1" Click="ClickButton" Margin="5,0,0,0"></Button>
+                    <Button Width="30" Height="30" Content="2" Click="ClickButton" Margin="5,0,0,0"></Button>
+                    <Button Width="30" Height="30" Content="3" Click="ClickButton" Margin="5,0,0,0"></Button>
+                    <Button Width="30" Height="30" Content="4" Click="ClickButton" Margin="5,0,0,0"></Button>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button Width="30" Height="30" Content="5" Click="ClickButton"></Button>
+                    <Button Width="30" Height="30" Content="6" Click="ClickButton" Margin="5,0,0,0"></Button>
+                    <Button Width="30" Height="30" Content="7" Click="ClickButton" Margin="5,0,0,0"></Button>
+                    <Button Width="30" Height="30" Content="8" Click="ClickButton" Margin="5,0,0,0"></Button>
+                    <Button Width="30" Height="30" Content="9" Click="ClickButton" Margin="5,0,0,0"></Button>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,20,0,0">
+                    <TextBox Width="100" IsEnabled="False" Name="textBox"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                    <Button Click="CreatePin">Valider</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

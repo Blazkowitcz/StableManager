@@ -1,0 +1,102 @@
+﻿<Page x:Class="StableManager.Frames.AjouterCheval"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StableManager.Frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="650"
+      Title="AjouterCheval">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="AUTO" Height="AUTO">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label Width="100" FontSize="20">Cheval</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Nom : </Label>
+                <TextBox Name="Nom" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Race :</Label>
+                <TextBox Name="Race" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Sire :</Label>
+                <TextBox Name="Sire"  Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Année :</Label>
+                <TextBox Name="Annee" Width="100"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Sexe :</Label>
+                <ComboBox Name="Sexe" Width="100">
+                    <ComboBoxItem>Mâle</ComboBoxItem>
+                    <ComboBoxItem>Femelle</ComboBoxItem>
+                    <ComboBoxItem>Hongre</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Robe :</Label>
+                <ComboBox Name="Robe" Width="150">
+                    <ComboBoxItem>Alezan</ComboBoxItem>
+                    <ComboBoxItem>Alezan crin brule</ComboBoxItem>
+                    <ComboBoxItem>Apaloosa</ComboBoxItem>
+                    <ComboBoxItem>Aubère</ComboBoxItem>
+                    <ComboBoxItem>Bai</ComboBoxItem>
+                    <ComboBoxItem>Blanc</ComboBoxItem>
+                    <ComboBoxItem>Café au lait</ComboBoxItem>
+                    <ComboBoxItem>Chocolat</ComboBoxItem>
+                    <ComboBoxItem>Crème</ComboBoxItem>
+                    <ComboBoxItem>Gris</ComboBoxItem>
+                    <ComboBoxItem>Gris capé</ComboBoxItem>
+                    <ComboBoxItem>Isabelle</ComboBoxItem>
+                    <ComboBoxItem>Louvet</ComboBoxItem>
+                    <ComboBoxItem>Noir</ComboBoxItem>
+                    <ComboBoxItem>Noir Pangaré</ComboBoxItem>
+                    <ComboBoxItem>Perlino</ComboBoxItem>
+                    <ComboBoxItem>Pie Alezan</ComboBoxItem>
+                    <ComboBoxItem>Pie Bai</ComboBoxItem>
+                    <ComboBoxItem>Pie Gris</ComboBoxItem>
+                    <ComboBoxItem>Pie Noir</ComboBoxItem>
+                    <ComboBoxItem>Rouan</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Père :</Label>
+                <TextBox Name="Pere" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Mère :</Label>
+                <TextBox Name="Mere" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Liste Sport :</Label>
+                <CheckBox Name="Sport"></CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Propriétaire :</Label>
+                <ComboBox Name="Proprietaire" Width="200"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Vétérinaire :</Label>
+                <ComboBox Name="Veterinaire" Width="200"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Maréchal :</Label>
+                <ComboBox Name="Marechal" Width="200"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <Label Width="100">Photo :</Label>
+                <Button Click="Button_Click_1">Sélectionner</Button>
+                <TextBox Name="Photo" Width="300" Margin="10,0,0,0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <Button Width="100" Margin="0,0,10,0" Click="Button_Click">Valider</Button>
+                <Button Width="100">Annuler</Button>
+            </StackPanel>
+        </StackPanel>
+        
+    </Grid>
+</Page>
